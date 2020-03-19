@@ -39,7 +39,7 @@
     "moment": "^2.22.0"
   },
   "deprecated": false,
-  "description": "React Native Picker Modal to add Picker for iOS with a modifiication of DatePicker component for both Android and iOS, using DatePickerAndroid, TimePickerAndroid and DatePickerIOS",
+  "description": "React Native Year Modal to add Year Picker for iOS with a modifiication of DatePicker component for iOS, using DatePickerIOS",
   "devDependencies": {
     "babel-core": "^6.5.2",
     "babel-eslint": "^7.2.3",
