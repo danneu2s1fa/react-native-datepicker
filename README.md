@@ -1,5 +1,5 @@
 # react-native-yearpicker [![Build Status](https://travis-ci.org/xgfe/react-native-datepicker.svg?branch=master)](https://travis-ci.org/xgfe/react-native-datepicker) [![Coverage Status](https://coveralls.io/repos/github/xgfe/react-native-datepicker/badge.svg?branch=master)](https://coveralls.io/github/xgfe/react-native-datepicker?branch=master) 
-React Native YearPicker component for both Android and iOS, using DatePickerAndroid, TimePickerAndroid and DatePickerIOS
+React Native YearPicker component for iOS, using DatePickerIOS to display a modal picker to select year value.  Fork from react-native-datepicker, which includs functionality for  Android using DatePickerAndroid and TimePickerAndroid
 
 ## Install
 
