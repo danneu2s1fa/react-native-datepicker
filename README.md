@@ -14,10 +14,7 @@ npm install react-native-ui-xg --save
 ```
 
 ## Example
-Check [index.android.js](https://github.com/xgfe/react-native-datepicker/blob/master/index.android.js) in the Example.
 
-![android](http://xgfe.github.io/react-native-datepicker/img/react-native-datepicker-android.gif)
-![ios](http://xgfe.github.io/react-native-datepicker/img/react-native-datepicker-ios.gif)
 
 ## Usage
 
@@ -35,29 +32,53 @@ export default class MyYearPicker extends Component {
   render(){
     return (
       <YearPicker
-        style={{width: 200}}
-        date={this.state.date}
-        mode="date"
-        placeholder="select date"
-        format="YYYY-MM-DD"
-        minDate="2016-05-01"
-        maxDate="2016-06-01"
-        confirmBtnText="Confirm"
-        cancelBtnText="Cancel"
-        customStyles={{
-          dateIcon: {
-            position: 'absolute',
-            left: 0,
-            top: 4,
-            marginLeft: 0
-          },
-          dateInput: {
-            marginLeft: 36
-          }
-          // ... You can check the source to find the other keys.
+        style={{flex:.9, paddingBottom:10}}
+        date={this.state.class_year_alum}
+        mode= "date" // for date with time: "datetime"
+
+        placeholder="Year"
+        format="YYYY" 
+        // minYear= "1992" // Not reqiured. 
+        maxYear="2020"  
+        confirmBtnText="Done"
+        cancelBtnText="" 
+        onDateChange={(date) => {this._setdate(date)} }
+        yearIndex = {this.state.yearIndex } // to display currently selected year -> {this.props.yearIndex}. 
+        year = {this.state.year} // this.props.year for currently selected year
+        isEnabled =  {this.state.isEnabled}
+        customStyles={{ 
+            datePicker: { 
+
+            },
+            dateText: {
+            fontSize: 20,
+            },
+            btnTextConfirm: {
+                color: '#007AFE',
+                fontWeight: 'bold',
+            },
+            btnTextCancel: {
+                color: '#007AFE',
+            },
+            placeholderText: {
+                fontSize:20,
+            },
+            dateInput: {
+                alignItems: 'flex-start',
+                backgroundColor: '#fff',
+                marginHorizontal: 10,
+                marginVertical: 5,
+                paddingVertical: 5,
+                paddingHorizontal: 5,
+                height: 50,
+            }
+            // ... You can check the source to find the other keys.
         }}
-        onDateChange={(date) => {this.setState({date: date})}}
-      />
+
+
+        />
+  
+       
     )
   }
 }
