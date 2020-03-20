@@ -1,5 +1,5 @@
 # react-native-yearpicker [![Build Status](https://travis-ci.org/xgfe/react-native-datepicker.svg?branch=master)](https://travis-ci.org/xgfe/react-native-datepicker) [![Coverage Status](https://coveralls.io/repos/github/xgfe/react-native-datepicker/badge.svg?branch=master)](https://coveralls.io/github/xgfe/react-native-datepicker?branch=master) 
-React Native YearPicker component for iOS, using DatePickerIOS to display a modal picker to select year value.  Fork from react-native-datepicker, which includs functionality for  Android using DatePickerAndroid and TimePickerAndroid
+React Native YearPicker component for iOS, using DatePickerIOS to display a modal picker to select year value.  Fork from react-native-datepicker, which included functionality for Android using DatePickerAndroid and TimePickerAndroid
 
 ## Install
 
@@ -7,11 +7,6 @@ React Native YearPicker component for iOS, using DatePickerIOS to display a moda
 npm install react-native-yearpicker --save
 ```
 
-Or using [react-native-ui-xg](https://github.com/xgfe/react-native-ui-xg), our react-naitve ui kit.
-
-```bash
-npm install react-native-ui-xg --save
-```
 
 ## Example
 
@@ -26,7 +21,7 @@ import YearPicker from 'react-native-yearpicker'
 export default class MyYearPicker extends Component {
   constructor(props){
     super(props)
-    this.state = {date:"2016-05-15"}
+    this.state = {date:"2016"}
   }
 
   render(){
